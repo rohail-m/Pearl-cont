@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* nav */
+.nav1 {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.our-story:hover,
+.our-brands {
+  cursor: pointer;
+}
+
+.our-story::after,
+.our-story::before {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  color: white;
+  display: block;
+  transition: all 0.5s ease;
+  margin: 2px 0;
+}
+
+.our-story:hover::after,
+.our-story:hover::before {
+  width: 100%;
+}
+
+.our-story:hover::before {
+  margin-left: auto;
+  width: 100%;
+}
+
+.our-brands::after,
+.our-brands::before {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  color: white;
+  display: block;
+  transition: all 0.5s ease;
+  margin: 2px 0;
+}
+
+.our-brands:hover::after,
+.our-brands:hover::before {
+  width: 100%;
+}
+
+.our-brands:hover::before {
+  margin-left: auto;
+  width: 100%;
+}
+.usd {
+  color: white;
+}
+
+.pkr {
+  color: gray;
+}
+
+.verticle-line {
+  color: white;
+  font-size: 2rem;
+}
+.search,
+.mic,
+.phone {
+  color: gray;
+  font-size: 2rem;
+}
+
+.sign-in {
+  color: white;
+  text-transform: uppercase;
+}
+
+.book-now {
+  color: black;
+  background-color: white;
+  padding: 1.3rem 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  border: 1px solid white;
+}
+
+.book-now:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+}
+
+/* nav2 */
+
+.nav2 {
+  background-color: black;
+  text-transform: uppercase;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.nav2 h4 {
+  cursor: pointer;
+}
+
+.hotels-and-resort::after,
+.our-aminities::after,
+.restaurants-and-dining::after,
+.wedding-and-events::after,
+.tours-and-travel::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  color: white;
+  background-color: white;
+  display: block;
+
+  transition: all 0.4s ease;
+}
+
+.hotels-and-resort:hover::after,
+.our-aminities:hover::after,
+.restaurants-and-dining:hover::after,
+.wedding-and-events:hover::after,
+.tours-and-travel:hover::after {
+  width: 100%;
+  background: linear-gradient(to right, purple, green, yellow);
+}
+
+/* hero section */
+
+.hero video {
+  height: 50%;
+}
+
+.hospitality {
+  position: absolute;
+  color: white;
+  text-shadow: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+}
+
+.hospitality h1 {
+  text-shadow: 15px 15px 5px black;
+  font-size: 3rem;
+}
+
+.nav3 {
+  background-color: rgba(91, 90, 88, 0.7);
+  width: 80%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.city {
+  margin-left: 2%;
+}
+
+.find-hotel {
+  background-color: #5b5a58;
+  padding: 1.5rem;
+  border-radius: 0 10px 10px 0;
+  transition: all 0.2s ease;
+}
+
+.find-hotel:hover {
+  background-color: white;
+  color: #5b5a58;
+  cursor: pointer;
+}
+
+/* experience  */
+.experience {
+  padding: 2rem;
+}
+
+.experience p {
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: #5b5a58;
+}
+
+.experience h6 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #5b5a58;
+  text-decoration: none;
+}
+
+/* offer section */
+.offer-card {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+}
+
+.data {
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.discover {
+  border: none;
+  border-radius: 15px;
+  text-transform: capitalize;
+  padding: 10px 35px;
+  color: #5b5a58;
+}
+
+.discover:hover {
+  background-color: #5b5a58;
+  color: white;
+  cursor: pointer;
+}
